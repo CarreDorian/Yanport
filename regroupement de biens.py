@@ -65,8 +65,8 @@ try:
     BDD = BDD.replace(0, nan)
     # Dataset\ -\ Ads\ -\ Biens\ Regroupés\ \/\ Levallois-Perret\ -\ 
     try:
-        BDD.to_excel('Dataset - Ads - Biens Regroupés - Levallois-Perret -2019-08.xlsx', index=False)
-        print('Donnes telecharges dans un fichier nomme : "Dataset - Ads - Biens Regroupés - Levallois-Perret -2019-08.xlsx"')
+        BDD.to_excel('Dataset - Ads - Biens Regroupés - Levallois-Perret - 2019-08.xlsx', index=False)
+        print('Donnes telecharges dans un fichier nomme : "Dataset - Ads - Biens Regroupés - Levallois-Perret - 2019-08.xlsx"')
     except:
         print("Erreur de telechargement")
 except:
@@ -81,6 +81,7 @@ except:
 
 # Voici donc mes pistes d'amelioration :
 
+# laisser le choix du nom à l'utilisateur, et demander à l'utilisateur validation avant d'écraser un document ;
 # rendre les liens contenus dans les listes clicables fonctionnelles ;
 # optimisation (7,40s pour ce programme). Une piste : remplacer les nan par 0 dans les cases que nous utilisons ;
 # optimisation de la mémoire
